@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/latt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/common_signin_btn_default_background"
+        android:hint="Lattitude"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button
+
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignEnd="@+id/address"
+        android:background="?android:attr/colorPressedHighlight"
+        android:onClick="toast"
+        android:text="PUNCH IN" />
+
+    <Button
+
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="131dp"
+        android:background="?android:attr/colorPressedHighlight"
+        android:onClick="toast"
+        android:text="PUNCH OUT" />
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/latt"
+        android:layout_alignBottom="@+id/latt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="63dp"
+        android:background="@color/common_signin_btn_default_background"
+        android:backgroundTint="#ffffff"
+        android:hint="Longitude"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginTop="63dp"
+        android:text="Address"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/latt"
+        android:layout_alignEnd="@+id/abc"
+        android:layout_toEndOf="@+id/latt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/latt"
+        android:layout_marginTop="24dp"
+        android:text="LATTITUDE" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/abc"
+        android:text="LONGITUDE" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/latt"
+        android:layout_alignTop="@+id/address"
+        android:background="?attr/colorButtonNormal"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/address"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="40dp"
+        android:hint="STATUS"
+        android:text="STATUS" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.madhav.attendance_marker.Registartion">
+
+    <EditText
+        android:id="@+id/lname"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact"
+        android:layout_alignEnd="@+id/fname"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="dd-mm-yyyy"
+        android:inputType="date"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dob"
+        android:layout_alignEnd="@+id/dob"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Contact"
+
+        android:inputType="phone"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:layout_alignEnd="@+id/lname"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lname"
+        android:layout_alignEnd="@+id/textView"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="submitClicked"
+        android:text="submit"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:inputType="textWebEmailAddress"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/common_action_bar_splitter"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="  EdItSofT  Creative. Passionate. Inspired. Innovative."
+        android:textColor="@color/common_action_bar_splitter"
+        android:textSize="18sp" />
+
+</RelativeLayout>
